@@ -1,0 +1,45 @@
+INSERT INTO city(id,city_name) values(1,'Mumbai');
+INSERT INTO city(id,city_name) values(2,'Delhi');
+INSERT INTO city(id,city_name) values(3,'Nagpur');
+INSERT INTO city(id,city_name) VALUES (4,'Hyderabad');
+INSERT INTO city(id,city_name) VALUES (5,'Agra');
+INSERT INTO city(id,city_name) VALUES (6,'Pune');
+INSERT INTO city(id,city_name) VALUES (7,'Chennai');
+INSERT INTO city(id,city_name) VALUES (8,'Jaipur');
+
+INSERT INTO line(id,line_name,line_mode,ORIGIN_ID,DESTINATION_ID,departure_time,arrival_time)
+values(1,'Air1','AIR',1,2,'01:00:00','02:15:00');
+INSERT INTO line(id,line_name,line_mode,ORIGIN_ID,DESTINATION_ID,departure_time,arrival_time)
+values(2,'Air2','AIR',1,4,'02:00:00','03:30:00');
+INSERT INTO line(id,line_name,line_mode,ORIGIN_ID,DESTINATION_ID,departure_time,arrival_time)
+values(3,'Bus1','ROAD',1,6,'02:00:00','06:30:00');
+INSERT INTO line(id,line_name,line_mode,ORIGIN_ID,DESTINATION_ID,departure_time,arrival_time)
+values(4,'Train1','TRAIN',6,2,'00:30:00','23:30:00');
+INSERT INTO line(id,line_name,line_mode,ORIGIN_ID,DESTINATION_ID,departure_time,arrival_time)
+values(5,'Train2','TRAIN',4,5,'00:30:00','23:30:00');
+
+
+INSERT INTO route(id,LINE_ID,stop_number,CITY_ID,arrival_time,departure_time)
+values(1,4,1,1,'03:30:00','03:40:00');
+INSERT INTO route(id,LINE_ID,stop_number,CITY_ID,arrival_time,departure_time)
+values(2,4,2,3,'07:30:00','07:35:00');
+INSERT INTO route(id,LINE_ID,stop_number,CITY_ID,arrival_time,departure_time)
+values(3,4,3,8,'16:00:00','16:35:00');
+INSERT INTO route(id,LINE_ID,stop_number,CITY_ID,arrival_time,departure_time)
+values(4,3,1,3,'04:00:00','04:05:00');
+
+INSERT INTO route(id,LINE_ID,stop_number,CITY_ID,arrival_time,departure_time)
+values(5,5,1,1,'04:00:00','04:05:00');
+INSERT INTO route(id,LINE_ID,stop_number,CITY_ID,arrival_time,departure_time)
+values(6,5,2,3,'04:00:00','04:05:00');
+INSERT INTO route(id,LINE_ID,stop_number,CITY_ID,arrival_time,departure_time)
+values(7,5,3,8,'04:00:00','04:05:00');
+
+
+SELECT * FROM ROUTE ;
+
+SELECT * FROM  LINE ;
+
+SELECT * FROM CITY ;
+
+
